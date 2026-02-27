@@ -75,8 +75,6 @@ public class Main {
                    } else {
                        System.out.println("ERRO: O nome não pode ser vazio.");
                    }
-                   break;investiment.updateName(newName);
-                   System.out.println("Nome atualizado com sucesso!");
                    break;
 
                case 5:

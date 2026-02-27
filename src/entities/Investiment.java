@@ -43,7 +43,6 @@ public class Investiment {
         return true;
     }
 
-    // Getters necessários para leitura no Main
     public String getHolder() { return holder; }
     public double getBalance() { return balance; }
 
