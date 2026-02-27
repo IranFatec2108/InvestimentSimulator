@@ -33,13 +33,14 @@ public class Investiment {
         return true;
     }
 
-    public void updateName(String newName) {
+    public boolean updateName(String newName) {
         // Evita nomes vazios ou compostos apenas por espaços
         if (newName.trim().isEmpty()) {
             System.out.println("Erro: Nome inválido.");
-            return;
+            return false;
         }
         this.holder = newName;
+        return true;
     }
 
     // Getters necessários para leitura no Main

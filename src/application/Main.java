@@ -69,7 +69,13 @@ public class Main {
                    System.out.println("Digite o novo nome do titular: ");
                    scanner.nextLine();
                    String newName = scanner.nextLine();
-                   investiment.updateName(newName);
+
+                   if (investiment.updateName(newName)) {
+                       System.out.println("Nome atualizado com sucesso!");
+                   } else {
+                       System.out.println("ERRO: O nome não pode ser vazio.");
+                   }
+                   break;investiment.updateName(newName);
                    System.out.println("Nome atualizado com sucesso!");
                    break;
 
